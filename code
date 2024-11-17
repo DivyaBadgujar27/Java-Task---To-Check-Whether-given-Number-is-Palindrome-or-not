@@ -1,0 +1,25 @@
+class PalindromOrNot
+{
+	public static void main(String args [])
+	{
+		int num = 121,back,rem,rev=0;
+		back= num;
+		while(back > 0)
+		{
+			rem = back % 10;
+			back = back / 10;
+			rev = rev * 10 + rem;
+		}
+		System.out.print("\nReverse of " + num + " = " + rev);
+
+		if(num == rev)
+		{
+			System.out.print("\nGiven Number Is Palindrom");
+		}
+		else
+		{
+			System.out.print("\nGiven Number is Not Palindrom");
+		}
+		System.out.print("\n\n");
+	}
+}
